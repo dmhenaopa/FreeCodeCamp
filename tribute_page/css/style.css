@@ -12,18 +12,18 @@ body {
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
-    color: #fff;
-    text-shadow: 0px 0px 1px #000;
-    text-align: center;
     background-color: #f20530;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    text-shadow: 0px 0px 1px #000;
 }
 
 h2 {
-    font-family: 'Dosis', sans-serif;
     color: #f23d6d;
-    text-shadow: 0px 0px 1px #000;
+    font-family: 'Dosis', sans-serif;
     text-align: center;
+    text-shadow: 0px 0px 1px #000;
 }
 
 p, h3 {
@@ -34,31 +34,69 @@ p, h3 {
 footer {
     background-color: #f20530;
     color: #fff;
-    text-align: center;
     font-family: 'Dosis';
+    text-align: center;
     text-shadow: 0px 0px 1px #000;
 }
 
 @media screen and (max-width: 834px) {
     h1 {
+        font-size: 1.8rem;
         height: 130px;
         line-height: 130px;
         white-space: nowrap;
-        font-size: 1.8rem;
+        width: 100%;
     }
 
     .definition img, .anatomy img {
-        width: 80%;
+        display: block;
+        margin: auto;        
         padding: 5%;
+        width: 80%;
     }
 
-    .ingredients img, .vanilla {
+    .ingredients img {
         width: 30%;
     }
 
-    .chocolate {
-        width: 100%;
-        clip-path: inset(50px 3px 50px 0px);
+    .container-1 {
+        border: 3px solid #000;
+        height: 100px;    
+        margin: 10% auto 0%;
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+    }
+
+    .container-1 > .chocolate {
+        bottom: -100%;
+        left: -100%; 
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        right: -100%;
+        top: -100%;
+    }
+
+    .container-2 {
+        border: 3px solid #000;
+        float: left;
+        height: 100px;
+        margin: 12% 5% 0% 10%;
+        overflow: hidden;
+        position: relative;
+        width: 30%;
+    }
+
+    .container-2 > .vanilla {
+        bottom: -100%;
+        left: -300%;
+        margin: auto;
+        min-width: 700%;
+        position: absolute;
+        right: -100%;
+        top: -100%;
     }
 
     .history img {
@@ -74,7 +112,112 @@ footer {
         width: 10%;
     }
 
-    .definition p, .ingredients p, .differences p {
+    .definition p, 
+    .ingredients p, 
+    .differences p {
         padding: 0 10% 0 10%;
     }
+
+    section {
+        padding: 0 0 10% 0;
+    }
+
+    .definition h2 {
+        padding-top: 5%;
+    }
+
+    .ingredients p, 
+    .history h3 {
+        padding-top: 10%;
+    }
+
+    .eggs-image, 
+    .soda-image {
+        border: 3px solid #000;
+        float:right;
+        margin: 12% 10% 0% 5%;
+    }
+
+    .cream-image, 
+    .flour-image {
+        border: 3px solid #000;
+        float: left;
+        margin: 12% 5% 0% 10%;
+    }
+
+    .anatomy {
+        height: 760px;
+    }
+
+    .anatomy h3 {
+        border: 3px solid #000;
+        border-radius: 20px;
+        font-family: 'Pacifico', cursive;
+        text-align: center;
+    }
+
+    .anatomy p {
+        font-family: 'Dosis';
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0 3%;
+        margin-bottom: -10%;
+    }
+
+    .anatomy img {
+        display: block;
+        margin: 250px auto;   
+        max-width: 300px;
+    }
+
+    .decoration {
+        background-color: #b9bf0499; /*opacity in the last 2 digits */
+        border: 3px solid #000;
+        border-radius: 15px;
+        width: 40%;
+        float: left;
+        margin: -750px 5%;
+    }
+
+    .decoration h3 {
+        background-color: #b9bf04;
+        width: 80%;
+        margin: -12% auto 5% auto;
+    }
+
+    .frosting {
+        background-color: #f2b70599; /*opacity in the last 2 digits */
+        border: 3px solid #000;
+        border-radius: 15px;
+        width: 40%;
+        float: right;
+        margin: -700px 5%;
+    }
+
+    .frosting h3 {
+        background-color: #f2b705;
+        width: 70%;
+        margin: -12% auto 5% auto;
+    }
+
+    .cake {
+        background-color: #f23d6d99; /*opacity in the last 2 digits */
+        border: 3px solid #000;
+        border-radius: 15px;
+        width: 50%;
+        margin: -200px auto;
+    }
+
+    .cake h3 {
+        background-color: #f23d6d;
+        width: 50%;
+        margin: -12% auto 5% auto;
+    }
+
+    .arrow-1, 
+    .arrow-2, 
+    .arrow-3 {
+        position: absolute;
+    }
+
 }
