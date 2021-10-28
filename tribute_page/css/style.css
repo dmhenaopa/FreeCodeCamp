@@ -177,6 +177,7 @@ footer {
         width: 40%;
         float: left;
         margin: -750px 5%;
+        max-width: 153px;
     }
 
     .decoration h3 {
@@ -192,6 +193,7 @@ footer {
         width: 40%;
         float: right;
         margin: -700px 5%;
+        max-width: 153px;
     }
 
     .frosting h3 {
@@ -206,6 +208,7 @@ footer {
         border-radius: 15px;
         width: 50%;
         margin: -200px auto;
+        max-width: 153px;
     }
 
     .cake h3 {
@@ -214,10 +217,28 @@ footer {
         margin: -12% auto 5% auto;
     }
 
-    .arrow-1, 
-    .arrow-2, 
-    .arrow-3 {
+    .anatomy .arrow-1, 
+    .anatomy .arrow-2, 
+    .anatomy .arrow-3 {
         position: absolute;
+        width: 60px;
     }
 
+    .anatomy .arrow-1 {
+        transform: rotate(70deg);
+        margin-top: -610px;
+        margin-left: 15%;
+    }
+
+    .anatomy .arrow-2 {
+        transform: rotate(130.31deg);
+        margin-top: -580px;
+        margin-left: 50%;
+    }
+
+    .anatomy .arrow-3 {
+        transform: rotate(-90deg);
+        margin-top: 10px;
+        margin-left: 35%;
+    }
 }
