@@ -145,57 +145,172 @@ footer {
         margin: 12% 5% 0% 10%;
     }
 
-    .item-1 {
+   .item-1 {
         grid-area: img-cupcake;
-        justify-self: center;
+        justify-self: stretch;
+        grid-column: 1 / 6;
     }
 
     .item-2 {
         grid-area: txt-decoration;
-        justify-self: center;
+        justify-self: stretch;
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
     }
 
     .item-3 {
         grid-area: img-arrow-1;
-        justify-self: center;
+        justify-self: stretch;
+        grid-row: 5 / 6;
     }
 
     .item-4 {
         grid-area: txt-frosting;
-        justify-self: center;
+        justify-self: stretch;
+        grid-column: 4 / 6;
+        grid-row: 4 / 6;
     }
 
     .item-5 {
         grid-area: img-arrow-2;
-        justify-self: center;
+        justify-self: stretch;
+        align-self: end;
+        grid-row: 6 / 6;
+        grid-column: 4 / 5;
     }
 
     .item-6 {
         grid-area: txt-cake;
-        justify-self: center;
+        justify-self: stretch;
+        grid-column: 1 / 6;
+        grid-row: 10 / 10;
     }
 
     .item-7 {
         grid-area: img-arrow-3;
-        justify-self: center;
+        justify-self: stretch;
+        grid-row: 8 / 8;
+    }
+
+    
+    
+    
+    
+   /*PRUEBA 
+    
+    .anatomy img {
+        width: 256px;
+    }
+
+    .item-1 {
+        grid-area: img-cupcake;
+        justify-self: stretch;
+        grid-column: 1 / 9;
+    }
+
+    .item-2 {
+        grid-area: txt-decoration;
+        justify-self: stretch;
+        grid-column: 1 / 4;
+        grid-row: 2 / 2;
+    }
+
+    .item-3 {
+        grid-area: img-arrow-1;
+        justify-self: stretch;
+        grid-row: 3 / 3;
+        align-self: end;
+    }
+
+    .item-4 {
+        grid-area: txt-frosting;
+        justify-self: stretch;
+        grid-column: 3 / 7;
+        grid-row: 3 / 5;
+    }
+
+    .item-5 {
+        grid-area: img-arrow-2;
+        justify-self: stretch;
+        align-self: end;
+        grid-row: 5 / 5;
+        grid-column: 4 / 5;
+    }
+
+    .item-6 {
+        grid-area: txt-cake;
+        justify-self: stretch;
+        grid-column: 1 / 6;
+        grid-row: 10 / 10;
+    }
+
+    .item-7 {
+        grid-area: img-arrow-3;
+        justify-self: stretch;
+        grid-row: 8 / 8;
     }
 
     .container {
         display: grid;
-        grid-template-columns: 50px 50px 200px 50px 50px;
-        grid-template-rows: auto;
+        grid-template-columns: 64px 64px 64px 64px 64px;
+        grid-template-rows: 76px 76px 76px 76px 76px 76px 76px 76px;
         grid-template-areas:
-            "txt-decoration . . . ."
-            "img-arrow-1 . . . ."
-            ". . . . txt-frosting"
-            ". . . . img-arrow-2"
+            "txt-decoration txt-decoration txt-decoration . ."
+            ". img-arrow-1 . . ."
+            ". . txt-frosting txt-frosting txt-frosting"
+            ". . . img-arrow-2 ."
+            ". . img-cupcake . ."
             ". . img-cupcake . ."
             ". . img-arrow-3 . ."
             ". . txt-cake . .";
-            height: 760px;
+        place-content: center; 
+        place-items: center;
+        height: 760px;
+    }*/
+
+
+
+
+
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 64px 64px 64px 64px 64px;
+        grid-template-areas:
+            "txt-decoration txt-decoration txt-decoration . ."
+            ". img-arrow-1 . . ."
+            ". . txt-frosting txt-frosting txt-frosting"
+            ". . . img-arrow-2 ."
+            ". . . img-arrow-2 ."
+            ". img-cupcake img-cupcake img-cupcake ."
+            ". img-cupcake img-cupcake img-cupcake ."
+            ". . img-arrow-3 . ."
+            ". . txt-cake . .";
+        place-content: center; /* all the container */
+        place-items: center; /* all the items inside the container */
+        height: 760px;
     }
 
-    /*.anatomy h3 {
+    .anatomy .arrow-1, 
+    .anatomy .arrow-2, 
+    .anatomy .arrow-3 {
+        width: 60px;
+    }
+
+    .anatomy .arrow-1 {
+        transform: rotate(70deg);
+    }
+
+    .anatomy .arrow-2 {
+        transform: rotate(130.31deg);
+    }
+
+    .anatomy .arrow-3 {
+        transform: rotate(-90deg);
+    }
+
+    .anatomy h3 {
         border: 3px solid #000;
         border-radius: 20px;
         font-family: 'Pacifico', cursive;
@@ -210,19 +325,10 @@ footer {
         margin-bottom: -10%;
     }
 
-    .anatomy img {
-        display: block;
-        margin: 250px auto;   
-        max-width: 300px;
-    }
-
     .decoration {
         background-color: #b9bf0499;
         border: 3px solid #000;
         border-radius: 15px;
-        width: 40%;
-        float: left;
-        margin: -750px 5%;
         max-width: 153px;
     }
 
@@ -236,15 +342,12 @@ footer {
         background-color: #f2b70599;
         border: 3px solid #000;
         border-radius: 15px;
-        width: 40%;
-        float: right;
-        margin: -700px 5%;
         max-width: 153px;
     }
 
     .frosting h3 {
         background-color: #f2b705;
-        width: 70%;
+        width: 80%;
         margin: -12% auto 5% auto;
     }
 
@@ -252,8 +355,7 @@ footer {
         background-color: #f23d6d99;
         border: 3px solid #000;
         border-radius: 15px;
-        width: 50%;
-        margin: -200px auto;
+        margin: auto;
         max-width: 153px;
     }
 
@@ -263,7 +365,7 @@ footer {
         margin: -12% auto 5% auto;
     }
 
-    .anatomy .arrow-1, 
+ /* .anatomy .arrow-1, 
     .anatomy .arrow-2, 
     .anatomy .arrow-3 {
         position: absolute;
