@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    background-color: #f20530;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    text-shadow: 0px 0px 1px #000;
+}
+
+h2 {
+    color: #f23d6d;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 1px #000;
+}
+
+p, h3 {
+    font-family: 'Libre Franklin';
+    text-align: justify;
+}
+
+footer {
+    background-color: #f20530;
+    color: #fff;
+    font-family: 'Dosis';
+    text-align: center;
+    text-shadow: 0px 0px 1px #000;
+}
+
+@media screen and (max-width: 834px) {
+    h1 {
+        font-size: 1.8rem;
+        height: 130px;
+        line-height: 130px;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    .definition img, .anatomy img {
+        display: block;
+        margin: auto;        
+        padding: 5%;
+        width: 80%;
+    }
+
+    .ingredients img {
+        width: 30%;
+    }
+
+    .container-1 {
+        border: 3px solid #000;
+        height: 100px;    
+        margin: 10% auto 0%;
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+    }
+
+    .container-1 > .chocolate {
+        bottom: -100%;
+        left: -100%; 
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        right: -100%;
+        top: -100%;
+    }
+
+    .container-2 {
+        border: 3px solid #000;
+        float: left;
+        height: 100px;
+        margin: 12% 5% 0% 10%;
+        overflow: hidden;
+        position: relative;
+        width: 30%;
+    }
+
+    .container-2 > .vanilla {
+        bottom: -100%;
+        left: -300%;
+        margin: auto;
+        min-width: 700%;
+        position: absolute;
+        right: -100%;
+        top: -100%;
+    }
+
+    .history img {
+        width: 20%;
+    }
+
+    footer {
+        height: 90px;
+        line-height: 90px;
+    }
+
+    footer img {
+        width: 10%;
+    }
+
+    .definition p, 
+    .ingredients p, 
+    .differences p {
+        padding: 0 10% 0 10%;
+    }
+
+    section {
+        padding: 0 0 10% 0;
+    }
+
+    .definition h2 {
+        padding-top: 5%;
+    }
+
+    .ingredients p, 
+    .history h3 {
+        padding-top: 10%;
+    }
+
+    .eggs-image, 
+    .soda-image {
+        border: 3px solid #000;
+        float:right;
+        margin: 12% 10% 0% 5%;
+    }
+
+    .cream-image, 
+    .flour-image {
+        border: 3px solid #000;
+        float: left;
+        margin: 12% 5% 0% 10%;
+    }
+
+    .item-1 {
+        grid-area: img-cupcake;
+        justify-self: center;
+    }
+
+    .item-2 {
+        grid-area: txt-decoration;
+        justify-self: center;
+    }
+
+    .item-3 {
+        grid-area: img-arrow-1;
+        justify-self: center;
+    }
+
+    .item-4 {
+        grid-area: txt-frosting;
+        justify-self: center;
+    }
+
+    .item-5 {
+        grid-area: img-arrow-2;
+        justify-self: center;
+    }
+
+    .item-6 {
+        grid-area: txt-cake;
+        justify-self: center;
+    }
+
+    .item-7 {
+        grid-area: img-arrow-3;
+        justify-self: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 50px 50px 200px 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "txt-decoration . . . ."
+            "img-arrow-1 . . . ."
+            ". . . . txt-frosting"
+            ". . . . img-arrow-2"
+            ". . img-cupcake . ."
+            ". . img-arrow-3 . ."
+            ". . txt-cake . .";
+            height: 760px;
+    }
+
+    /*.anatomy h3 {
+        border: 3px solid #000;
+        border-radius: 20px;
+        font-family: 'Pacifico', cursive;
+        text-align: center;
+    }
+
+    .anatomy p {
+        font-family: 'Dosis';
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0 3%;
+        margin-bottom: -10%;
+    }
+
+    .anatomy img {
+        display: block;
+        margin: 250px auto;   
+        max-width: 300px;
+    }
+
+    .decoration {
+        background-color: #b9bf0499;
+        border: 3px solid #000;
+        border-radius: 15px;
+        width: 40%;
+        float: left;
+        margin: -750px 5%;
+        max-width: 153px;
+    }
+
+    .decoration h3 {
+        background-color: #b9bf04;
+        width: 80%;
+        margin: -12% auto 5% auto;
+    }
+
+    .frosting {
+        background-color: #f2b70599;
+        border: 3px solid #000;
+        border-radius: 15px;
+        width: 40%;
+        float: right;
+        margin: -700px 5%;
+        max-width: 153px;
+    }
+
+    .frosting h3 {
+        background-color: #f2b705;
+        width: 70%;
+        margin: -12% auto 5% auto;
+    }
+
+    .cake {
+        background-color: #f23d6d99;
+        border: 3px solid #000;
+        border-radius: 15px;
+        width: 50%;
+        margin: -200px auto;
+        max-width: 153px;
+    }
+
+    .cake h3 {
+        background-color: #f23d6d;
+        width: 50%;
+        margin: -12% auto 5% auto;
+    }
+
+    .anatomy .arrow-1, 
+    .anatomy .arrow-2, 
+    .anatomy .arrow-3 {
+        position: absolute;
+        width: 60px;
+    }
+
+    .anatomy .arrow-1 {
+        transform: rotate(70deg);
+        margin-top: -610px;
+        margin-left: 15%;
+    }
+
+    .anatomy .arrow-2 {
+        transform: rotate(130.31deg);
+        margin-top: -580px;
+        margin-left: 50%;
+    }
+
+    .anatomy .arrow-3 {
+        transform: rotate(-90deg);
+        margin-top: 10px;
+        margin-left: 35%;
+    }*/
+}
