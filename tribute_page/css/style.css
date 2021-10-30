@@ -170,13 +170,96 @@ footer {
         max-width: 300px;
     }
 
+    .item-1 {
+        justify-self: stretch;
+        grid-column: 1 / 6;
+        grid-row: 3 / 5;
+    }
+
+    .item-2 {
+        justify-self: stretch;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .item-3 {
+        justify-self: stretch;
+        grid-column: 2 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .item-4 {
+        justify-self: stretch;
+        grid-column: 4 / 6;
+        grid-row: 2 / 2;
+    }
+
+    .item-5 {
+        justify-self: stretch;
+        align-self: end;
+        grid-row: 4 / 4 ;
+        grid-column: 4 / 5;
+
+    }
+
+    .item-6 {
+        justify-self: stretch;
+        grid-column: 2 / 5;
+        grid-row: 6 / 6;
+    }
+
+    .item-7 {
+        justify-self: stretch;
+        grid-row: 5 / 6;
+        grid-column: 3 / 3;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 64px 64px 64px 64px 64px;
+        grid-template-rows: 60px 110px 150px 150px 60px 120px;
+        place-content: center; /* all the container */
+        place-items: center; /* all the items inside the container */
+        height: 750px;
+    }
+
+    .anatomy .arrow-1, 
+    .anatomy .arrow-2, 
+    .anatomy .arrow-3 {
+        width: 60px;
+    }
+
+    .anatomy .arrow-1 {
+        transform: rotate(70deg);
+    }
+
+    .anatomy .arrow-2 {
+        transform: rotate(130.31deg);
+    }
+
+    .anatomy .arrow-3 {
+        transform: rotate(-90deg);
+    }
+
+    .anatomy h3 {
+        border: 3px solid #000;
+        border-radius: 20px;
+        font-family: 'Pacifico', cursive;
+        text-align: center;
+    }
+
+    .anatomy p {
+        font-family: 'Dosis';
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0 3%;
+        margin-bottom: -10%;
+    }
+
     .decoration {
-        background-color: #b9bf0499; /*opacity in the last 2 digits */
+        background-color: #b9bf0499;
         border: 3px solid #000;
         border-radius: 15px;
-        width: 40%;
-        float: left;
-        margin: -750px 5%;
         max-width: 153px;
     }
 
@@ -187,27 +270,23 @@ footer {
     }
 
     .frosting {
-        background-color: #f2b70599; /*opacity in the last 2 digits */
+        background-color: #f2b70599;
         border: 3px solid #000;
         border-radius: 15px;
-        width: 40%;
-        float: right;
-        margin: -700px 5%;
         max-width: 153px;
     }
 
     .frosting h3 {
         background-color: #f2b705;
-        width: 70%;
+        width: 80%;
         margin: -12% auto 5% auto;
     }
 
     .cake {
-        background-color: #f23d6d99; /*opacity in the last 2 digits */
+        background-color: #f23d6d99;
         border: 3px solid #000;
         border-radius: 15px;
-        width: 50%;
-        margin: -200px auto;
+        margin: auto;
         max-width: 153px;
     }
 
@@ -215,30 +294,5 @@ footer {
         background-color: #f23d6d;
         width: 50%;
         margin: -12% auto 5% auto;
-    }
-
-    .anatomy .arrow-1, 
-    .anatomy .arrow-2, 
-    .anatomy .arrow-3 {
-        position: absolute;
-        width: 60px;
-    }
-
-    .anatomy .arrow-1 {
-        transform: rotate(70deg);
-        margin-top: -610px;
-        margin-left: 15%;
-    }
-
-    .anatomy .arrow-2 {
-        transform: rotate(130.31deg);
-        margin-top: -580px;
-        margin-left: 50%;
-    }
-
-    .anatomy .arrow-3 {
-        transform: rotate(-90deg);
-        margin-top: 10px;
-        margin-left: 35%;
     }
 }
