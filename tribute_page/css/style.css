@@ -103,6 +103,15 @@ footer {
         width: 20%;
     }
 
+    .history h2 {
+        padding-bottom: 10%;
+    }
+
+    .history h3 {
+        padding: 10px 0;
+        text-align: center;
+    }
+
     footer {
         height: 90px;
         line-height: 90px;
@@ -302,11 +311,12 @@ footer {
     .grid-2 {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(5, 150px 50px);
+        grid-template-rows: repeat(5, auto 50px);
         place-content: center; /* all the container */
         place-items: center; /* all the items inside the container */
-        width: 320px;
+        width: 300px;
         margin: 0 auto;
+        font-size: 0.9rem;
     }
 
     .item-21 {
@@ -424,5 +434,8 @@ footer {
         transform: rotate(90deg);
     }
 
-
+    .differences h2 {
+        padding: 5% 0;
+        text-align: center;
+    }
 }
