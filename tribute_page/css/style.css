@@ -144,14 +144,14 @@ footer {
     .soda-image {
         border: 3px solid #000;
         float:right;
-        margin: 12% 10% 0% 5%;
+        margin: 5% 10% 8% 5%;
     }
 
     .cream-image, 
     .flour-image {
         border: 3px solid #000;
         float: left;
-        margin: 12% 5% 0% 10%;
+        margin: 5% 5% 8% 10%;
     }
 
     .anatomy {
@@ -175,10 +175,10 @@ footer {
 
     .anatomy img {
         display: block;
-        margin: 250px auto;   
+        margin: 540px auto 0 auto;   
     }
 
-    .item-11 {
+    .grid-1 .item-11 {
         justify-self: stretch;
         grid-column: 1 / 6;
         grid-row: 3 / 5;
@@ -206,10 +206,8 @@ footer {
 
     .item-15 {
         justify-self: stretch;
-        align-self: end;
-        grid-row: 4 / 4 ;
+        grid-row: 2 / 3 ;
         grid-column: 4 / 5;
-
     }
 
     .item-16 {
@@ -221,6 +219,7 @@ footer {
 
     .item-17 {
         justify-self: stretch;
+        align-self: start;
         grid-row: 5 / 6;
         grid-column: 3 / 3;
     }
@@ -232,7 +231,7 @@ footer {
         place-content: center; /* all the container */
         place-items: center; /* all the items inside the container */
         height: 750px;
-        width: 320px;
+        max-width: 320px;
         margin: 0 auto;
     }
 
@@ -247,7 +246,7 @@ footer {
     }
 
     .anatomy .arrow-2 {
-        transform: rotate(130.31deg);
+        transform: rotate(110deg);
     }
 
     .anatomy .arrow-3 {
@@ -314,7 +313,7 @@ footer {
         grid-template-rows: repeat(5, auto 50px);
         place-content: center; /* all the container */
         place-items: center; /* all the items inside the container */
-        width: 300px;
+        max-width: 300px;
         margin: 0 auto;
         font-size: 0.9rem;
     }
@@ -422,6 +421,14 @@ footer {
         min-width: 60%;
     }
 
+    .arrow-1::after, .arrow-2::after,
+    .arrow-3::after {
+        /*content: '\27F6';
+        content: '\279E';*/
+        content: '\279C';
+        font-size: 2.7rem;
+    }
+
     .arrow-dotted-1,
     .arrow-dotted-2,
     .arrow-dotted-3,
@@ -437,5 +444,44 @@ footer {
     .differences h2 {
         padding: 5% 0;
         text-align: center;
+    }
+
+    .big-icon {
+        text-align: center;
+        font-size: 0.7rem;
+        padding-bottom: 20px;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .big-icon-3 {
+        width: 300px;
+        padding-top: 10px
+    }
+    
+    a {
+        color: #f23d6d;
+    }
+
+    .small-icon-2, 
+    .small-icon-4 {
+        font-size: 0.4rem;
+        float: right;
+        /*margin: 1% 9% 5% 55%;*/
+        margin: 38% 9% 5% 55%;
+        text-align: center;
+    }
+
+    .small-icon-1, 
+    .small-icon-3 {
+        float: left;
+        /*margin: 1% 55% 5% 9%;*/
+        margin: 38% 55% 5% 9%;
+        font-size: 0.4rem;
+        text-align: center;
+    }
+
+    .small-icon {
+        position: absolute;
     }
 }
