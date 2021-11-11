@@ -465,11 +465,13 @@ footer {
 
     .small-icon-2, 
     .small-icon-4 {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
         float: right;
         /*margin: 1% 9% 5% 55%;*/
-        margin: 38% 9% 5% 55%;
+        /*margin: 38% 9% 5% 55%;*/
+        margin: 38% 49%;
         text-align: center;
+        width: 150px;
     }
 
     .small-icon-1, 
@@ -477,7 +479,7 @@ footer {
         float: left;
         /*margin: 1% 55% 5% 9%;*/
         margin: 38% 55% 5% 9%;
-        font-size: 0.4rem;
+        font-size: 0.5rem;
         text-align: center;
     }
 
